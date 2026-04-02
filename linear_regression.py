@@ -4,23 +4,23 @@
 x = [1, 2, 3, 4, 5]   # x = input data (hours studied)
 y = [2, 4, 5, 4, 5]   # y = output data (marks obtained)
 
-n = len(x)  # total number of data points (yahan 5)
-# Mean (average) calculate kar rahe hain
-mean_x = sum(x) / n   # x ka average (center point)
-mean_y = sum(y) / n   # y ka average (center point)
+n = len(x)  # total number of data points (here 5)
+# here we are calculating Mean (average) 
+mean_x = sum(x) / n   # x average (center point)
+mean_y = sum(y) / n   # y average (center point)
 
-# Slope (m) ke liye numerator aur denominator initialize
+# initializing the numerator and denominator for Slope (m)
 num = 0   # numerator = relation between x and y
 den = 0   # denominator = variation in x
 
-# Loop har data point ke liye chalega
+# loop will run for each data type
 for i in range(n):  
-    # (x[i] - mean_x) = x ka deviation (average se kitna door)
+    # (x[i] - mean_x) = x ka deviation (how far it is from average)
     # (y[i] - mean_y) = y ka deviation
-    # dono ko multiply karke relation check kar rahe
+    # checking relation by multiplying both
     num += (x[i] - mean_x) * (y[i] - mean_y)
     
-    # (x[i] - mean_x)^2 = x me kitna variation hai
+    # (x[i] - mean_x)^2 = x me kitna variation hai(How much variation x having)
     den += (x[i] - mean_x) ** 2
 
 # Slope (m) calculate kiya
