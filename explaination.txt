@@ -1,0 +1,70 @@
+PROJECT: Linear Regression from Scratch
+
+1. Objective:
+The goal of this project is to understand and implement Linear Regression without using any machine learning libraries.
+
+This model predicts output (marks) based on input (hours studied).
+
+--------------------------------------------------
+
+2. Problem Statement:
+Given a dataset of study hours and corresponding marks, the task is to predict marks for new input values.
+
+Example:
+If a student studies for 6 hours, what marks can be expected?
+
+--------------------------------------------------
+
+3. Concept Used:
+
+Linear Regression works on a simple equation:
+
+y = mx + b
+
+Where:
+m = slope (rate of change of y with respect to x)
+b = intercept (value of y when x = 0)
+
+--------------------------------------------------
+
+4. Approach:
+
+Step 1: Define input (x) and output (y) data
+
+Step 2: Calculate mean (average) of x and y
+
+Step 3: Compute slope (m) using formula:
+m = Σ[(x - mean_x)(y - mean_y)] / Σ[(x - mean_x)^2]
+
+Step 4: Compute intercept (b):
+b = mean_y - m * mean_x
+
+Step 5: Use equation y = mx + b to predict new values
+
+--------------------------------------------------
+
+5. Output:
+The program calculates:
+- Slope (m)
+- Intercept (b)
+- Predicted marks for a given input
+
+--------------------------------------------------
+
+6. Learning Outcome:
+
+- Understood the core working of Linear Regression
+- Learned how prediction models are built mathematically
+- Implemented a machine learning algorithm from scratch
+- Gained clarity on slope, intercept, and best-fit line
+
+--------------------------------------------------
+
+7. Conclusion:
+
+This project helped in building a strong foundation of machine learning 
+by understanding the logic behind Linear Regression instead of directly using libraries.
+
+--------------------------------------------------------------
+
+This project was implemented independently as part of my learning in Machine Learning.
